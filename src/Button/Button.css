@@ -1,0 +1,62 @@
+.css-button {
+  border-radius: 4px;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  appearance: none;
+  user-select: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 16px;
+  font-size: 14px;
+}
+
+.css-button--primary:disabled {
+  cursor: not-allowed;
+}
+
+.css-button--primary {
+  color: rgb(255, 255, 255);
+  background-color: rgb(45, 164, 78);
+  box-shadow: rgb(27 31 36 / 10%) 0px 1px 0px;
+  border-color: rgb(45, 164, 78);
+}
+
+.css-button--primary:hover:not([disabled]) {
+  background-color: rgb(44, 151, 75);
+  border-color: rgb(44, 151, 75);
+}
+
+.css-button--secondary:disabled {
+  cursor: not-allowed;
+}
+
+.css-button--secondary {
+  color: rgb(36, 41, 47);
+  background-color: rgb(246, 248, 250);
+  outline: none;
+  transition: all .3s ease;
+}
+
+.css-button--secondary:hover:not([disabled]) {
+  background-color: rgb(243, 244, 246);
+}
+
+.css-button--small {
+  padding: 3px 12px;
+  font-size: 12px;
+}
+
+.css-button--medium {
+  padding: 5px 16px;
+  font-size: 14px;
+}
+
+.css-button--large {
+  padding: 9px 20px;
+  font-size: 16px;
+}
