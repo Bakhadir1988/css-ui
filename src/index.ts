@@ -1,2 +1,1 @@
-export Button, {Size, Color} from "./Button/Button.tsx";
-
+export { Button, Size, Color } from "./Button";

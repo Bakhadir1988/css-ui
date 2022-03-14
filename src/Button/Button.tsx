@@ -20,18 +20,21 @@ export interface ButtonProps {
   label: string;
 }
 
-const Button: FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   label,
   buttonColor,
   size,
   backgroundColor,
   ...props
 }) => {
-  const modeSize = size ? `css-button--${size}` : '';
-  const modeButtonColor = buttonColor ? `css-button--${buttonColor}` : '';
+
+  const styles = ['css-button'];
+  buttonColor && styles.push(`css-button--${buttonColor}`);
+  size && styles.push(`css-button--${size}`);
+
   return (
     <button
-      className={['css-button', `${modeSize}`, `${modeButtonColor}`].join(' ')}
+      className={styles.join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
@@ -39,5 +42,3 @@ const Button: FC<ButtonProps> = ({
     </button>
   );
 };
-
-export default Button;
