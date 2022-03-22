@@ -1,18 +1,17 @@
-import React, { FC } from 'react';
-import './Button.css'
+import React, { FC } from "react";
+import "./Button.css";
 
 export enum Size {
-  small = 'small',
-  medium = 'medium',
-  large = 'large'
+  small = "small",
+  medium = "medium",
+  large = "large",
 }
 
 export enum Color {
-  primary = 'primary',
-  secondary = 'secondary',
-  danger = 'danger'
+  primary = "primary",
+  secondary = "secondary",
+  danger = "danger",
 }
-
 export interface ButtonProps {
   size?: Size;
   buttonColor?: Color;
@@ -27,17 +26,12 @@ export const Button: FC<ButtonProps> = ({
   backgroundColor,
   ...props
 }) => {
-
-  const styles = ['css-button'];
+  const styles = ["css-button"];
   buttonColor && styles.push(`css-button--${buttonColor}`);
   size && styles.push(`css-button--${size}`);
 
   return (
-    <button
-      className={styles.join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
+    <button className={styles.join(" ")} style={{ backgroundColor }} {...props}>
       {label}
     </button>
   );

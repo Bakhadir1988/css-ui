@@ -1,0 +1,26 @@
+.css-button-icon i {
+  width: 1rem;
+  height: 1rem;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-button-icon--delete {
+  background-color: #ff3547;
+}
+
+.css-button-icon--delete:active {
+  background-color: #ce0012;
+  box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+}
+
+.css-button-icon--check {
+  background-color: #2bbbad;
+}
+
+.css-button-icon--check:active {
+  background-color: #186860;
+  box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+}
